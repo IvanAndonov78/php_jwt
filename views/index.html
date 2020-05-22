@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Oncle Vanyo is cool </title>
+        <link rel="stylesheet" href="./views/bs-3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./views/css/index.css">
+        <script src="./views/jq/jquery-3.4.1.min.js"></script>
+        <script src="./views/bs-3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        MENU
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                        <!--<span class="caret"></span>-->
+                    </a>                        
+                        <ul class="dropdown-menu" id="titles_ul">
+                            <li>
+                            <input 
+                                type="text" 
+                                id="search_titles" 
+                                onkeyup="filterByTitle()" 
+                                placeholder="Search for title .." 
+                                title="Type in a file name"
+                                style="margin:4px;"
+                            >
+                            </li>
+                            <div id="rest_of_li">
+                                <li>
+                                    <a href="#"> 
+                                        Additional Info - todo
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"> 
+                                        Among the termins - todo
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"> 
+                                        Basic Concepts - todo
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"> 
+                                        Content List - todo
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"> 
+                                        Common issues - todo
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="./">
+                            <span class="glyphicon glyphicon-education"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="navbar-form navbar-left">
+                            <div class="form-group">
+                              <input type="text" 
+                                class="form-control" 
+                                placeholder="Search"
+                                name="mainsearch"
+                                id="mainsearch">
+                            </div>
+                            <button type="button" 
+                                class="btn btn-primary"
+                                id="mainsearch-btn"> 
+                                Search 
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" 
+                            class="btn btn-lg" 
+                            data-toggle="modal" 
+                            data-target="#loginModal" 
+                            id="login-link"> 
+                            <span class="glyphicon glyphicon-log-in" id="login-icon"></span>
+                            <span class="glyphicon glyphicon-log-out" id="logout-icon"></span>
+                            <span id="login-out-btn-txt"></span> 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="modal fade" id="loginModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"> Login User form </h4>
+                    </div>
+                    <div class="modal-body">
+                    
+                        <div class="container" id="login-form" style="width:74%;">
+                            <form id="loginForm">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon glyphicon-user"></i>
+                                    </span>
+                                        <input id="email" 
+                                            type="text" 
+                                            class="form-control" 
+                                            name="email" 
+                                            placeholder="Email"> 
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon glyphicon-lock"></i>
+                                    </span>
+                                    <input id="password" 
+                                        type="password" 
+                                        class="form-control" 
+                                        name="password" 
+                                        placeholder="Password">
+                                </div>
+                            </form>
+                            <div class="modal-footer">
+                                <button class="btn btn-default" id="login-btn"> 
+                                    Login 
+                                </button>    
+                                <button type="button" 
+                                    class="btn btn-default" 
+                                    data-dismiss="modal"
+                                    id="closeBtn"> 
+                                    Close 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h3 id="lp_text_holder"></h3>
+        </div> 
+
+        <div class="container">
+            <div style="overflow-x:auto;">
+                <img src="" id="main_img">
+            </div>
+        </div>
+
+        <div class="container" id="slider_1"></div>
+
+        <div class="container" id="git_txt_holder"></div>
+        
+		<div clas="container">
+            <div id="table_holder" style="overflow-x:auto;">    
+            </div>
+        </div>
+        <script src="./views/js/login.js"></script>
+        <script src="./views/js/app.js"></script>
+	</body>
+</html>
