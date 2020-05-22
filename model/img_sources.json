@@ -1,0 +1,22 @@
+[
+    {
+        "id": 0,
+        "src": "./views/images/my_qr.png"
+    },
+    {
+        "id": 1,
+        "src": "./views/images/1.jpg"
+    },
+    {
+        "id": 2,
+        "src": "./views/images/2.jpg"
+    },
+    {
+        "id": 3,
+        "src": "./views/images/3.jpg"
+    },
+    {
+        "id": 4,
+        "src": "./views/images/4.jpg"
+    }
+]
